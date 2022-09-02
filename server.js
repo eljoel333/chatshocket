@@ -6,12 +6,7 @@ const httpServer = new HttpServer(app)
 const io = new IOServer(httpServer)
 const products = require('./src/contenedor')
 let messages = [
-  {date:"25/8/2022 23:32:03 ",
-  author:"Juan",text:"Hola ¿Qué tal?"},
-  {date:"25/8/2022 23:32:03 ",
-  author:"Pedro",text:"Muy Bien y vos?"},
-  {date:"25/8/2022 23:32:03 ",
-  author:"Ana",text:"Geinal!"}
+
 ]
 const server = httpServer.listen(PORT, () => {
     console.log(`Servidor http escuchando en el puerto ${server.address().port}`);

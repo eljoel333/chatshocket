@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Ecommerce</title>
+  <title>Mi comercio electrónico</title>
  
 
 </head>
 
 <body>
-  <div class="container bg-dark bg-opacity-25">
-    <h2 class="text-primary text-center">Ingrese un nuevo producto</h2>
+  <div class="container">
+    <h2 class="text-primary text-center">Formulario de productos</h2>
     <div class="row d-flex justify-content-center">
       <form class="w-50" onsubmit="return addProduct(this)">
         <div class="mb-3">
@@ -34,32 +34,41 @@
       </form>
     </div>
    
-    <a href='/productos'>
-      <button>Ver todos los productos</button>
-    </a>
+
   </div>
-  <div class="container bg-dark my-5">
+  <div class="container bg-opacity-25 my-5">
     <h2 class="text-danger text-center">Lista de productos</h2>
   <div id="products">
-    <table class='table bg-dark table-striped text-white'>
+    <table class='table  table-striped text-white'>
       <thead>
         <tr>
-          <th>Producto</th>
-          <th>Precio</th>
-          <th>Imagen</th>
+          <th style="color: black">Producto</th>
+          <th style="color: black">Precio</th>
+          <th style="color: black">Imagen</th>
         </tr>
       </thead>
       <tbody id="tbdy">
       </tbody>
     </table>
+      <a href='/productos'>
+          <button class="btn btn-dark">Ver todos los productos</button>
+      </a>
   </div>
   <div class="row my-5">
-    <h2 class="text-primary text-center">Centro de mensajes</h2>
-  <div>
+    <h2 class="text-primary text-center">Mensajes</h2>
+  <div class="text-primary text-center">
     <form onsubmit="return addMessage(this)">
-        <input type="text" id="username" placeholder="Acá tu email">
+
         <div id="messages"></div>
+
+        <div class="mb-3">
+        <input type="text" id="username" placeholder="Acá tu email">
+
+        </div>
+        <div class="mb-3">
         <input type="text" id="texto" placeholder="Cuéntanos algo...">
+
+        </div>
         <input class="btn btn-dark" type="submit" value="Enviar">
     </form>
   </div>

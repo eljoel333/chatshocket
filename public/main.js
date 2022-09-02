@@ -16,7 +16,7 @@ const render=(data)=>{
             <td>${p.price}</td>
             <td>
               <div>
-                <img class="w-50" src=${p.thumbnail} alt='Product image' />
+                <img class="w-25" src=${p.thumbnail} alt='Product image' />
               </div>
             </td>
           </tr>`)
